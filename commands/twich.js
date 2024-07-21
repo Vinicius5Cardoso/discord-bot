@@ -56,10 +56,8 @@ module.exports = {
         statusMessage = `${message.author} https://www.twitch.tv/${username} não está ao vivo no momento.`;
       }
 
-      // Envia a mensagem de resposta
       await message.channel.send(statusMessage);
 
-      // Apaga a mensagem com o comando digitado
       await message.delete();
       
     } catch (error) {
