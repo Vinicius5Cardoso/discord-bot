@@ -1,7 +1,7 @@
 module.exports = {
     name: 'twt',
     description: 'Mostra como usar o comando !twitch',
-    allowedChannelId: '1264361701977886730', // ID do canal permitido para !twt
+    allowedChannelId: '1264361701977886730', 
     execute(message) {
       console.log(`Command !twt executed in channel: ${message.channel.id}`);
       if (message.channel.id !== this.allowedChannelId) {
