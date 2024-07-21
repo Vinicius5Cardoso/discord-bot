@@ -1,7 +1,7 @@
 module.exports = {
     name: 'msc',
     description: 'Mostra como usar o comando !d',
-    allowedChannelId: '1264360916674285599', // ID do canal permitido para !musica
+    allowedChannelId: '1264360916674285599', 
     execute(message) {
       console.log(`Command !musica executed in channel: ${message.channel.id}`);
       if (message.channel.id !== this.allowedChannelId) {
